@@ -1,0 +1,13 @@
+# Node
+frontend/node_modules
+frontend/dist
+
+# Java
+demo/target
+*.log
+
+# IDE
+.vscode
+*.class
+
+Backend/src/main/resources/application.yml
