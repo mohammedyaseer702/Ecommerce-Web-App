@@ -1,11 +1,7 @@
 import { useCart } from "./CartContext";
 import { useState } from "react";
-import { createOrder } from "../orders/ordersApi";
-import { useNavigate } from "react-router-dom";
-import { loadStripe } from "@stripe/stripe-js";
 import { createStripeSession } from "../payment/paymentApi";
 
-const stripePromise = loadStripe("pk_test_xxxxxxxxxxxx");
 
 export default function CartPage() {
   const {
@@ -14,10 +10,8 @@ export default function CartPage() {
     increaseQty,
     decreaseQty,
     getTotal,
-    clearCart, // ✅ Added clearCart
   } = useCart();
 
-  const navigate = useNavigate();
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
