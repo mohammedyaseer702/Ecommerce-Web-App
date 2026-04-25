@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: ${mysql://root:GDvPkRUJBnpLqKuQMahSZRuETqIFxtYx@interchange.proxy.rlwy.net:42661/railway}
+    username: ${root}
+    password: ${GDvPkRUJBnpLqKuQMahSZRuETqIFxtYx}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+stripe:
+  secret:
+    key: ${STRIPE_SECRET_KEY}
