@@ -47,7 +47,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
         ...prev,
         {
           id: product.id,
-          name: product.name,
+          productName: product.name,
           price: Number(product.price),
           imageUrl: product.imageUrl,
           quantity: 1,
