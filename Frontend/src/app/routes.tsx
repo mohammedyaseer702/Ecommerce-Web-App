@@ -15,7 +15,7 @@ import AdminDashboard from "../features/admin/AdminDashboard";
 import AdminOrdersPage from "../features/admin/AdminOrdersPage";
 import AdminProductsPage from "../features/admin/AdminProductsPage";
 import ProductDetailsPage from "../features/products/ProductDetailsPage";
-import DashboardPage from "../pages/user/DashBoardPage";
+import DashboardPage from "../pages/user/DashboardPage";
 
 
 function AppRoutes() {
