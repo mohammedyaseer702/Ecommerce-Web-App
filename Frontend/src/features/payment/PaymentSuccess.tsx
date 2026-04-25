@@ -4,7 +4,7 @@ import api from "../../utils/api";
 
 
 export default function PaymentSuccess() {
-  const [ params] = useSearchParams();
+  useSearchParams();
   const navigate = useNavigate(); // ✅ ADD THIS
 
   useEffect(() => {
