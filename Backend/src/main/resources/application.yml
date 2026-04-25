@@ -3,15 +3,21 @@ server:
 
 spring:
   datasource:
-    url: ${mysql://root:GDvPkRUJBnpLqKuQMahSZRuETqIFxtYx@interchange.proxy.rlwy.net:42661/railway}
-    username: ${root}
-    password: ${GDvPkRUJBnpLqKuQMahSZRuETqIFxtYx}
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
-  database-platform: org.hibernate.dialect.MySQLDialect
+    database-platform: org.hibernate.dialect.MySQLDialect
     hibernate:
       ddl-auto: update
+    show-sql: true
+
+cloudinary:
+  cloud-name: ${CLOUD_NAME}
+  api-key: ${CLOUD_API_KEY}
+  api-secret: ${CLOUD_API_SECRET}
 
 stripe:
   secret:
