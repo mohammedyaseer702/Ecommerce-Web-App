@@ -72,7 +72,7 @@ window.location.href = paymentUrl;
       className="w-16 h-16 object-cover rounded"
     />
           <div>
-            <h2 className="font-semibold">{item.name}</h2>
+            <h2 className="font-semibold">{item.productName}</h2>
             <p>₹ {item.price}</p>
           </div>
 
