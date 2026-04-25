@@ -66,7 +66,7 @@ window.location.href = paymentUrl;
       src={
         item.imageUrl?.startsWith("http")
           ? item.imageUrl
-          : `http://localhost:8080${item.imageUrl}`
+          : `https://ecommerce-web-app-1-hhn4.onrender.com${item.imageUrl}`
       }
       alt={item.productName}
       className="w-16 h-16 object-cover rounded"
